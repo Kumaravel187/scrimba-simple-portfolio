@@ -32,7 +32,7 @@ ol[role="list"] {
 html,
 html:focus-within {
   scroll-behavior: smooth;
-  font-size: 100%;
+  font-size: 125%;
 }
 
 /* Set core body defaults */
@@ -70,13 +70,14 @@ select {
   min-height: 100vh;
   min-height: 100dvh;
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .container {
   max-width: 42rem;
   width: 100%;
   margin: 0 auto;
+
   // border: 1px solid red;
 
   &:nth-child(1),
@@ -86,6 +87,10 @@ select {
 }
 
 @media (min-width: 48rem) {
+  // html {
+  //   font-size: 100%;
+  // }
+
   .container {
     &:nth-child(1),
     &:nth-child(2) {
