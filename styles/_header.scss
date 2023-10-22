@@ -1,0 +1,22 @@
+header {
+  background-color: #000;
+  padding: 2rem 0;
+  .container {
+    h1 {
+      color: $grey;
+      font-size: $fs-xxxl;
+
+      span {
+        display: block;
+        font-size: $fs-4xl;
+        color: $green;
+        margin-top: -1.5rem;
+      }
+    }
+
+    img {
+      margin: 2rem auto;
+      width: 15rem;
+    }
+  }
+}
